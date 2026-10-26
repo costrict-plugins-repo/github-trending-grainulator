@@ -1,0 +1,12 @@
+{
+	"mcpServers": {
+		"grainulator": {
+			"type": "stdio",
+			"command": "node",
+			"args": ["${CLAUDE_PLUGIN_ROOT}/bin/grainulator.js", "mcp"],
+			"env": {
+				"GRAINULATOR_MEMORY_DIR": "${CLAUDE_PLUGIN_DATA}/memory"
+			}
+		}
+	}
+}

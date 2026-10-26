@@ -1,0 +1,26 @@
+{
+	"hooks": {
+		"PostToolUse": [
+			{
+				"matcher": "^mcp__(?:.*_)?grainulator__(add_claim|import_claims|resolve)$|^mcp__.*__wheat_(add.claim|resolve)$",
+				"hooks": [
+					{
+						"type": "command",
+						"command": "node \"${CLAUDE_PLUGIN_ROOT}/lib/tips-hook.cjs\""
+					}
+				]
+			}
+		],
+		"PreToolUse": [
+			{
+				"matcher": "Write|Edit|apply_patch",
+				"hooks": [
+					{
+						"type": "command",
+						"command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/write-guard.cjs\""
+					}
+				]
+			}
+		]
+	}
+}
