@@ -1,0 +1,46 @@
+{
+  "name": "@grainulation/grainulator-runtime",
+  "version": "3.0.1",
+  "description": "Private Grainulator convergence runtime and reference checker",
+  "type": "module",
+  "private": true,
+  "files": [
+    "bin/",
+    "schemas/",
+    "README.md",
+    "LICENSE",
+    "EXAMPLE.md"
+  ],
+  "scripts": {
+    "test": "node test/smoke.test.js && node test/codex-portability.test.js && node test/runtime-check.test.js",
+    "typecheck": "tsc --noEmit",
+    "format": "npx prettier@3.3 --write .",
+    "format:check": "npx prettier@3.3 --check .",
+    "test:conformance": "node test/conformance.mjs"
+  },
+  "keywords": [
+    "execution-discipline",
+    "stage-plan",
+    "delegation",
+    "verification",
+    "self-critique",
+    "codex",
+    "blindspot",
+    "fable-mode",
+    "claude",
+    "skill"
+  ],
+  "author": "grainulation contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grainulation/grainulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grainulation/grainulator/issues"
+  },
+  "homepage": "https://grainulator.dev",
+  "engines": {
+    "node": ">=24"
+  }
+}

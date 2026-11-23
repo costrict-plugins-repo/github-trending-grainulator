@@ -1,0 +1,42 @@
+node_modules/
+.DS_Store
+*.log
+claims.json
+compilation.json
+output/
+test-results/
+playwright-report/
+
+# Claude Code
+.claude/
+
+# Environment / secrets — never commit
+.env
+.env.local
+.env.*.local
+
+# Local dogfood artifacts
+.dogfood/
+.grainulator/
+**/claims.json.lock/
+**/rs/target/
+
+# Generated static site artifact
+dist/
+
+.grainulator-tips.md
+.grainulator-compile.lock
+
+# Shipped test fixtures; ordinary sprint ledgers stay ignored.
+!packages/exports/test/fixtures/claims.json
+!examples/grounded-report-sprint/claims.json
+!examples/grounded-report-sprint/output/
+
+# Local npm pack artifacts.
+*.tgz
+
+# Only source-controlled native conformance fixtures; production state stays ignored.
+!packages/runtime/test/fixtures/**/.grainulator/
+!packages/runtime/test/fixtures/**/.grainulator/runtime/
+!packages/runtime/test/fixtures/**/.grainulator/runtime/claims.json
+!packages/runtime/test/fixtures/**/.grainulator/runtime/run.json

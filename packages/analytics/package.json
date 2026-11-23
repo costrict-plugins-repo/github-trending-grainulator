@@ -1,0 +1,60 @@
+{
+  "name": "@grainulation/grainulator-analytics",
+  "version": "3.0.1",
+  "description": "Analytics and retrospective layer for research sprints -- learn from every decision you've made",
+  "type": "module",
+  "main": "lib/analyzer.js",
+  "exports": {
+    ".": "./lib/analyzer.js",
+    "./calibration": "./lib/calibration.js",
+    "./decay": "./lib/decay.js",
+    "./patterns": "./lib/patterns.js",
+    "./velocity": "./lib/velocity.js",
+    "./token-tracker": "./lib/token-tracker.js",
+    "./wrapped": "./lib/wrapped.js",
+    "./report-card": "./lib/report-card.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node --test test/basic.test.js test/report.test.js test/token-tracker.test.js test/wrapped.test.js test/tarball.test.js",
+    "start": "node bin/analytics.js",
+    "format": "npx prettier@3.3 --write .",
+    "format:check": "npx prettier@3.3 --check ."
+  },
+  "keywords": [
+    "analytics",
+    "retrospective",
+    "research",
+    "sprints",
+    "calibration",
+    "decisions"
+  ],
+  "author": "grainulation contributors",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "templates/",
+    "README.md",
+    "LICENSE",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grainulation/grainulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grainulation/grainulator/issues"
+  },
+  "homepage": "https://grainulator.dev",
+  "dependencies": {
+    "@grainulation/grainulator-shared": "3.0.1"
+  },
+  "private": true
+}

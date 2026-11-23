@@ -1,0 +1,51 @@
+{
+  "name": "@grainulation/grainulator-memory",
+  "version": "3.0.1",
+  "description": "Reusable knowledge for research sprints -- shared claim libraries, templates, and knowledge packs",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "node test/basic.test.js && node --test test/smart-fetch.test.js test/fetch-cache.test.js test/smart-fetch.live.test.js test/serve-mcp.test.js test/tarball.test.js",
+    "test:live": "FETCH_LIVE=1 npm test",
+    "start": "node bin/memory.js --help",
+    "format": "npx prettier@3.3 --write .",
+    "format:check": "npx prettier@3.3 --check ."
+  },
+  "dependencies": {
+    "@grainulation/grainulator-shared": "3.0.1"
+  },
+  "keywords": [
+    "research",
+    "claims",
+    "knowledge",
+    "templates",
+    "sprint"
+  ],
+  "author": "grainulation contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grainulation/grainulator.git"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "bugs": {
+    "url": "https://github.com/grainulation/grainulator/issues"
+  },
+  "homepage": "https://grainulator.dev",
+  "files": [
+    "bin/",
+    "lib/",
+    "packs/",
+    "CHANGELOG.md",
+    "LICENSE",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "private": true
+}

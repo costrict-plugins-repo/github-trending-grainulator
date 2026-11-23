@@ -1,0 +1,59 @@
+{
+  "name": "@grainulation/grainulator-orchestration",
+  "version": "3.0.1",
+  "description": "Multi-sprint research orchestrator \u2014 coordinate parallel research across teams",
+  "type": "module",
+  "main": "lib/planner.js",
+  "exports": {
+    ".": "./lib/planner.js",
+    "./sync": "./lib/sync.js",
+    "./tracker": "./lib/tracker.js",
+    "./conflicts": "./lib/conflicts.js",
+    "./hackathon": "./lib/hackathon.js",
+    "./decompose": "./lib/decompose.js",
+    "./emit": "./lib/emit.js",
+    "./doctor": "./lib/doctor.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "templates/",
+    "README.md",
+    "LICENSE",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test/basic.test.js && node --test test/emit.test.js test/tarball.test.js",
+    "start": "node bin/orchestrate.js status",
+    "format": "npx prettier@3.3 --write .",
+    "format:check": "npx prettier@3.3 --check ."
+  },
+  "keywords": [
+    "research",
+    "sprint",
+    "orchestrator",
+    "multi-sprint",
+    "evidence"
+  ],
+  "author": "grainulation contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grainulation/grainulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grainulation/grainulator/issues"
+  },
+  "homepage": "https://grainulator.dev",
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@grainulation/grainulator-shared": "3.0.1"
+  },
+  "private": true
+}

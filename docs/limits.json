@@ -1,0 +1,44 @@
+[
+	{
+		"id": "L1",
+		"area": "Claim lifecycle",
+		"limit": "Older active risks and time-specific facts remain beside newer evidence; resolve requires an actual conflict relationship",
+		"status": "Deliberately bounded",
+		"mitigation": "Reviewed presentations select and cite the latest findings; full-ledger exports retain history"
+	},
+	{
+		"id": "L2",
+		"area": "Real usage acceptance",
+		"limit": "Paid-provider CLI research needs locally configured credentials; native host fixture tests do not replace real host tasks",
+		"status": "Deliberately bounded",
+		"mitigation": "Install the local build in the target host and exercise it on a real task before claiming host readiness"
+	},
+	{
+		"id": "L3",
+		"area": "Execution boundary",
+		"limit": "Model-backed research runs only through explicit local CLI or host operations; no browser app or hosted execution service is bundled",
+		"status": "Deliberately bounded",
+		"mitigation": "Use headless preparation without provider access, then authorize the intended local provider or host run"
+	},
+	{
+		"id": "L4",
+		"area": "Product source separation",
+		"limit": "Website code and unused site assets are excluded; the product retains CLI/MCP, generated reports and documentation branding",
+		"status": "Resolved",
+		"mitigation": "Package absence gates reject public directories and retired web launchers while exercising installed CLI/MCP/report workflows"
+	},
+	{
+		"id": "L5",
+		"area": "Outcome evidence",
+		"limit": "Semantic-v2 found no general answer-quality or efficiency improvement; verification catches specified failures, not source truth",
+		"status": "Deliberately bounded",
+		"mitigation": "Use explicit verifiers and adversarial rejected-claims checks; never claim universal accuracy or cost gains"
+	},
+	{
+		"id": "L6",
+		"area": "Release boundary",
+		"limit": "Local verification does not perform remote CI, deployment, publication, or repository archival without authorization",
+		"status": "Deliberately bounded",
+		"mitigation": "Require green CI and explicit maintainer release authorization before tagging or publishing"
+	}
+]

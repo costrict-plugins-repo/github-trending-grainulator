@@ -1,0 +1,54 @@
+{
+  "name": "@grainulation/grainulator-exports",
+  "version": "3.0.1",
+  "description": "Turn evidence sprint artifacts into shareable formats",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./formats/markdown": "./lib/formats/markdown.mjs",
+    "./formats/csv": "./lib/formats/csv.mjs",
+    "./formats/json-ld": "./lib/formats/json-ld.mjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "CHANGELOG.md",
+    "LICENSE",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "test": "node test/basic.test.js && node test/formats-esm.test.js && node --test test/serve-mcp.test.js test/tarball.test.js",
+    "start": "node bin/exports.js",
+    "format": "npx prettier@3.3 --write .",
+    "format:check": "npx prettier@3.3 --check ."
+  },
+  "dependencies": {
+    "@grainulation/grainulator-shared": "3.0.1"
+  },
+  "keywords": [
+    "evidence",
+    "sprint",
+    "export",
+    "pdf",
+    "csv",
+    "markdown",
+    "json-ld",
+    "publishing"
+  ],
+  "author": "grainulation contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grainulation/grainulator.git"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "bugs": {
+    "url": "https://github.com/grainulation/grainulator/issues"
+  },
+  "homepage": "https://grainulator.dev",
+  "private": true
+}
